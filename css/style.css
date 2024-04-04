@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+   width: 150px;
+   display: flex;
+   align-items: center;
+   padding-left: 30px;
+}
+.logo svg{
+    width: inherit;
+}
+.menu .list{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-end;
+    color: white;
+}
+
+.header{
+    background-image: url("file:///C:/Users/Aluno/OneDrive%20-%20SENAC%20-%20SP/Documentos/GitHub/missao-momento/img/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.header__button{
+    text-align: center;
+}
+.header__button button{
+    width: 20%;
+    padding: 20px;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    color: #1C2F40;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header__text{
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header__text h1{
+    color: white;
+    font-size: 3rem;
+}
+
+.header__text p{
+    color: white;
+    font-size: 2rem;
+}
+
+.valores{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.valores .item{
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+.item p{
+    line-height: 1.5;
+    color: white;
+}
+
+.valores .item:nth-child(1){
+    background-color: #1C2F40;
+}
+
+.valores .item:nth-child(2){
+    background-color: #3C5E73;
+}
+
+.valores .item:nth-child(3){
+    background-color: #734a27d0;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.projetos__text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+.projetos__text h2{
+    font-size: 2rem;
+}
+.projetos__text p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__projetos{
+    background-color: #32454e77;
+    padding: 50px 0;
+}
+
+.projetos__exemplos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.projetos__item{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.projetos__item:nth-child(1), .projetos__item:nth-child(3){
+    background-color: #1C2F40;
+}
+.projetos__item:nth-child(2){
+    background-color: #734a27e3;
+}
+.projetos__item figure{
+    width: 100%;
+}
+.projetos__item figure img{
+    width: inherit;
+    object-fit: contain;
+}
+.projetos__item p{
+    color: white;
+    font-size: 1.5rem;
+}
+.projetos__item h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}   
+
+.depoimentos{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 1.5rem;
+}
+.depoimentos h3{
+    text-align: center;
+}
+
+.depoimentos__content{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.depoimentos__item{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.footer{
+    padding: 50px;
+    background-color: #1C2F40;
+    margin-top: 40px;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.footer-list li{
+    font-size: 1.2rem;
+    color: white;
+}
+
+@media only screen and (max-width:2560px){
+    :root{
+        font-size: 24px;
+    }
+    
+}
+
+@media only screen and (max-width:1440px){
+    :root{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    :root{
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (max-width:768px){
+    :root{
+        font-size: 10px;
+    }
+    .projetos__exemplos{
+        grid-template-columns: 1fr;
+
+    }
+    .valores{
+        width: 95vw;
+    }
+    .header__button button{
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    :root{
+        font-size: 9px;
+    }
+    .valores{
+        grid-template-columns: 1fr;
+    }
+    .depoimentos__content{
+        flex-direction: column;
+    }
+    .header__button button{
+        width: 40%;
+        padding: 15px;
+    }
+}
