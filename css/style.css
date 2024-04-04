@@ -14,7 +14,7 @@
    align-items: center;
    padding-left: 30px;
 }
-.logo svg{
+.logo img{
     width: inherit;
 }
 .menu .list{
@@ -24,6 +24,7 @@
     padding: 20px;
     justify-content: flex-end;
     color: white;
+    cursor: pointer;
 }
 
 .header{
@@ -124,7 +125,6 @@
     font-size: 1.5rem;
     line-height: 1.5;
 }
-
 .content{
     display: flex;
     flex-direction: column;
@@ -147,11 +147,8 @@
     flex-direction: column;
     gap: 25px;
 }
-.projetos__item:nth-child(1), .projetos__item:nth-child(3){
+.projetos__item{
     background-color: #1C2F40;
-}
-.projetos__item:nth-child(2){
-    background-color: #734a27e3;
 }
 .projetos__item figure{
     width: 100%;
