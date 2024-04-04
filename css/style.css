@@ -26,9 +26,8 @@
     color: white;
     cursor: pointer;
 }
-
 .header{
-    background-image: url("file:///C:/Users/Aluno/OneDrive%20-%20SENAC%20-%20SP/Documentos/GitHub/missao-momento/img/fundo.png");
+    background-image: url("../img/fundo.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
